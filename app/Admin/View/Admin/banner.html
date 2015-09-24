@@ -1,0 +1,48 @@
+<include file="Admin/header"/>
+<body>
+<include file="Admin/sidebar"/>
+<div id="main">
+    <div id="main_page_content">
+        <div id="main_title"><h2>管理Banner</h2></div>
+        <div id="main_body">
+            <div id="article_manage_table">
+                <table id="article_manage" cellpadding="0" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th class="id">图片id</th>
+                        <th class="title">标题</th>
+                        <th class="url">链接地址</th>
+                        <td class="preview">操作</td>
+                        <th class="state">操作</th>
+                        <th class="update">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    </tr>
+                    <volist name="banner" id="var" empty="没有数据">
+                        <tr>
+                            <td class="id">{$var.id}</td>
+                            <td class="title">{$var.title}</td>
+                            <td class="url">{$var.href}</td>
+                            <td class="preview">
+                                <a class="" href="{$var.src}" target="_blank">查看</a>
+                            </td>
+                            <td class="enable">
+                                <a class="pic_enable" val="__MODULE__/Banner/enable/{$var.id}">{$var.state}</a>
+                            </td>
+                            <td class="update">
+                                <a class="" href="__MODULE__/Banner/update/{$var.id}" target="_blank">更新</a>
+                            </td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="content_division"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

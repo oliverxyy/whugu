@@ -1,0 +1,254 @@
+[ 2015-09-17T11:21:16+08:00 ] ::1 /whugu/Home/category/activity/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `category` WHERE `ename` = 'activity' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=1 ) LIMIT 0,15   [ RunTime:0.0250s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `article` WHERE ( cid=1 ) LIMIT 1   [ RunTime:0.0620s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-09-17T11:21:17+08:00 ] ::1 /whugu/Public/static/img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-17T11:21:19+08:00 ] ::1 /whugu/Home/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=1 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=2 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=3 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=4 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=5 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=6 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-17T11:33:21+08:00 ] ::1 /whugu/Public/static/js/UEditor/themes/default/css/ueditor.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:Public
+
+[ 2015-09-17T11:33:21+08:00 ] ::1 /whugu/Public/static/js/UEditor/themes/iframe.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:Public
+
+[ 2015-09-17T11:33:21+08:00 ] ::1 /whugu/Public/static/js/UEditor/php/controller.php?action=config&&noCache=1442460801573
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Public
+
+[ 2015-09-17T11:33:21+08:00 ] ::1 /whugu/Public/static/js/UEditor/third-party/codemirror/codemirror.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:Public
+
+[ 2015-09-17T11:33:21+08:00 ] ::1 /whugu/Public/static/js/UEditor/third-party/codemirror/codemirror.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:Public
+
+[ 2015-09-17T11:33:22+08:00 ] ::1 /whugu/Public/static/js/UEditor/third-party/zeroclipboard/ZeroClipboard.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Public
+
+[ 2015-09-17T11:40:04+08:00 ] ::1 /whugu/Home/article/102.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `article` WHERE `id` = 102 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `category` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: title C:\www\whugu\app\Runtime\Cache\Home\bc11a67a19137f1c76ae8019e668d7be.php 第 86 行.
+NOTIC: [8] Undefined index: publisher C:\www\whugu\app\Runtime\Cache\Home\bc11a67a19137f1c76ae8019e668d7be.php 第 87 行.
+NOTIC: [8] Undefined index: pubdate C:\www\whugu\app\Runtime\Cache\Home\bc11a67a19137f1c76ae8019e668d7be.php 第 88 行.
+NOTIC: [8] Undefined index: author C:\www\whugu\app\Runtime\Cache\Home\bc11a67a19137f1c76ae8019e668d7be.php 第 90 行.
+NOTIC: [8] Undefined index: hit C:\www\whugu\app\Runtime\Cache\Home\bc11a67a19137f1c76ae8019e668d7be.php 第 91 行.
+NOTIC: [8] Undefined index: content C:\www\whugu\app\Runtime\Cache\Home\bc11a67a19137f1c76ae8019e668d7be.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-17T11:40:08+08:00 ] ::1 /whugu/Home/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=1 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=2 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=3 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=4 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=5 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=6 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.122007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-09-17T11:40:12+08:00 ] ::1 /whugu/Home/article/12711
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `article` WHERE `id` = 12711 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `article` SET `cid`='1',`title`='武汉大学2014年研究生羽毛球赛圆满落幕',`content`='<p><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">
+<p><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">&nbsp;&nbsp;&nbsp; 12<font face=\"宋体\">月</font><font face=\"Times New Roman\">21</font><font face=\"宋体\">日，为期两天的武汉大学</font><font face=\"Times New Roman\">2014</font><font face=\"宋体\">年研究生羽毛球赛在桂园风雨操场落下帷幕。本次比赛由武汉大学研工部和武汉大学体育部联合主办，武汉大学研究生会承办。比赛分为男子单打、女子单打、男子双打、女子双打和混合双打五个项目，经过激烈的竞技决出各项目的冠军，他们分别是来自资源与环境科学学院的任冠尧、印刷与包装系的袁媛、口腔医学院的滕方君和周小程、化学与分子科学学院的卢倩和毛丽箐以及化学与分子科学学院的伍子同和熊亚。</font>主办方为</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">各项目的前六名及团体前三名举行了颁奖仪式。</span></p>
+<p>&nbsp;</p>
+<p style=\"text-align: left\">&nbsp;</p>
+<div style=\"text-align: center\"><img style=\"cursor: pointer\" onclick=\"window.open(\'/uploads/allimg/141223/1_141223003719_1.jpg\')\" border=\"0\" alt=\"\" src=\"http://gu.whu.edu.cn/uploads/allimg/141223/1_141223003719_1_lit.jpg\" width=\"600\" height=\"450\" /><br />
+<span style=\"font-family: \'宋体\'; font-size: 10.5pt; mso-spacerun: \'yes\'\"><o:p>&nbsp;</o:p></span></div>
+<p style=\"text-align: left; line-height: 150%; margin-top: 0pt; text-indent: 24pt; margin-bottom: 0pt\" class=\"p0\"><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">在昨天的首轮角逐后，选手们信心倍增，</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">今</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">天</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">比赛</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">时纷纷提</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">前到达现场进行赛前热身。</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">观众们也陆陆续续进入球场，无比憧憬本场体育盛宴。</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">上午<font face=\"Times New Roman\">8</font></span><span style=\"font-family: \'Times New Roman\'; font-size: 12pt; mso-spacerun: \'yes\'\">:</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">3</span><span style=\"font-family: \'Times New Roman\'; font-size: 12pt; mso-spacerun: \'yes\'\">0</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">，十六进八的比赛准时拉开帷幕。本次比赛采用</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">15<font face=\"宋体\">分、</font></span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">三局两胜制，通过软件随机决定比赛双方。经过几轮激战，男子单打项目亚军花落资源与环境科学学院的傅征博，</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">他非常开心：</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">&ldquo;羽毛球比赛不仅可以使同学们相互切磋学习竞技技术，还有利于提升自我心理和身体素质&rdquo;</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">。女子单打的亚军则是由来自边海国问的黄敏获得。双打比赛的场面更加激动人心，选手们拼实力、战技术，一次次精彩的回合引得场边观众的热情欢呼。</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">水利水电学院</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">的</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">赵辰</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">和</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">余明</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">不负众望，荣获男子双打的亚军</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">；女子双打</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">与混合双打的</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">亚军</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">分别是来自</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">第二临床学院</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">的</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">张丹</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">和</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">韩芳芳</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">、来自</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">水利水电学院</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">的</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">曾筱菲</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">和</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">万丹阳</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">。比赛根据各单打和双打比赛换算积分，按院系总积分排出团体前</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">3<font face=\"宋体\">名。最终</font></span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">化学与分子科学学院</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">以</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">19<font face=\"宋体\">分高居榜首，</font></span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">荣获团体总冠军。</span></p>
+<p style=\"text-align: left; line-height: 150%; margin-top: 0pt; text-indent: 24pt; margin-bottom: 0pt\" class=\"p0\">&nbsp;</p>
+<div style=\"text-align: center\"><img style=\"cursor: pointer\" onclick=\"window.open(\'/uploads/allimg/141223/1_141223003814_1.jpg\')\" border=\"0\" alt=\"\" src=\"http://gu.whu.edu.cn/uploads/allimg/141223/1_141223003814_1_lit.jpg\" width=\"600\" height=\"450\" /></div>
+<p style=\"text-align: center\">&nbsp;</p>
+<p style=\"text-align: center; line-height: 150%; margin-top: 0pt; text-indent: 24pt; margin-bottom: 0pt\" class=\"p0\"><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\"><o:p></o:p></span><span style=\"font-family: \'宋体\'; font-size: 10.5pt; mso-spacerun: \'yes\'\"><o:p></o:p></span></p>
+<p style=\"text-align: left; line-height: 150%; margin-top: 0pt; text-indent: 24pt; margin-bottom: 0pt\" class=\"p0\"><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">赛后，化学与分子科学学院领队伍子同在接受采访时对主办方表示感谢，希望以后有更多的机会参与此类活动。最后的合影，选手们都露出了灿烂的笑容。&ldquo;强健体质，传递力量&rdquo;，这正是武汉大学研究生会承办本次羽毛球比赛的重要</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">意义</span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\">。</span></p>
+<p style=\"text-align: left; line-height: 150%; margin-top: 0pt; text-indent: 24pt; margin-bottom: 0pt\" class=\"p0\">&nbsp;</p>
+<div style=\"text-align: center\"><img style=\"cursor: pointer\" onclick=\"window.open(\'/uploads/allimg/141223/1_141223003902_1.jpg\')\" border=\"0\" alt=\"\" src=\"http://gu.whu.edu.cn/uploads/allimg/141223/1_141223003902_1_lit.jpg\" width=\"600\" height=\"337\" /></div>
+<p style=\"text-align: center\">&nbsp;</p>
+<p style=\"text-align: center; line-height: 150%; margin-top: 0pt; text-indent: 24pt; margin-bottom: 0pt\" class=\"p0\"><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\"><o:p></o:p></span></p>
+<p style=\"text-align: center; line-height: 150%; margin-top: 0pt; margin-bottom: 0pt\" class=\"p0\"><span style=\"font-family: \'宋体\'; font-size: 10.5pt; mso-spacerun: \'yes\'\"><o:p>&nbsp;</o:p></span></p>
+</span></p>
+<p style=\"text-align: center\"><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\"><!--EndFragment--></span><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\"><o:p></o:p></span></p>
+<p style=\"text-align: center; line-height: 150%; margin-top: 0pt; text-indent: 24pt; margin-bottom: 0pt\" class=\"p0\"><span style=\"font-family: \'宋体\'; font-size: 12pt; mso-spacerun: \'yes\'\"><o:p>&nbsp;</o:p></span></p>
+<p style=\"text-align: center; line-height: 150%; margin-top: 0pt; margin-bottom: 0pt\" class=\"p0\"><span style=\"font-family: \'宋体\'; font-size: 10.5pt; mso-spacerun: \'yes\'\"><o:p>&nbsp;</o:p></span></p>
+<p style=\"text-align: center; line-height: 150%; margin-top: 0pt; margin-bottom: 0pt\" class=\"p0\"><span style=\"font-family: \'宋体\'; font-size: 10.5pt; mso-spacerun: \'yes\'\"><o:p>&nbsp;</o:p></span></p>
+<p style=\"text-align: center\"><!--EndFragment--></p>',`author`='校研会宣传部',`publisher`='涂霞',`pubdate`='2014-12-23 00:33:39',`hit`='118',`state`='0' WHERE `id` = 12711 [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-17T14:04:48+08:00 ] ::1 /whugu/Public/static/UEditor/php/.php?action=config&&noCache=1442469888774
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Public
+

@@ -193,10 +193,15 @@ button {
 /******** admin usingInfo style end ********/
 
 /******** admin manageUser style start ********/
-
+.delete_user{
+    padding: 7px 15px;
+    background: #1e96d1;
+    border-radius: 5px;
+    color: #FFF;
+}
 #user_manage,#article_manage {
 	width:1080px;
-	margin-top:50px;
+	margin-top:30px;
 	border-radius:3px;
 	font-size:12px;
 	border: 1px solid #ddd;
@@ -237,7 +242,7 @@ button {
 /******** admin addUser style start ********/
 #addUser,#addArticle {
 	width:1080px;
-	padding-top:100px;
+	padding-top:30px;
 }
 .addUser_row,.addArticle_row {
 	width:1080px;
@@ -317,10 +322,13 @@ button {
 #type-choose {
 	width:1080px;
 	height:40px;
+    color:#666;
 }
-#type-choose button{
+#type-choose a{
 	width:100px;
 	height:28px;
+    display: inline-block;
+    text-align: center;
 	margin-top:10px;
 	margin-right:5px;
 	border: 1px solid #ddd;
@@ -328,36 +336,22 @@ button {
 	font-weight:bold;
 	line-height: 28px;
 	border-radius: 3px;
-	color:#666;
-	background:#eee;
+    background:#eee;
 }
-#type-choose button:hover{
+#type-choose a:hover{
 	background-color: #2F95CE;
 	border-color: #2F95CE;
 	color:#fff;
 }
-#child-type-choose button{
-	width:72px;
-	height:28px;
-	margin-top:10px;
-	margin-right:5px;
-	border: 1px solid #ddd;
-	font-size: 12px;
-	color:#555;
-	line-height: 28px;
-	border-radius: 3px;
-	background:#cdcdcd;
-}
-#child-type-choose button:hover{
-	background-color: #2F95CE;
-	border-color: #2F95CE;
-	color:#fff;
+#type-choose .clickBlue{
+    background-color: #2F95CE;
+    border-color: #2F95CE;
+    color:#fff;
 }
 /******** admin addArticle style end ********/
 /******** admin manageArticle style start ********/
 #article_manage_table {
 	width:1080px;
-	height:800px;
 	overflow-y: hidden;
 	overflow-x: auto;
 	font-size:12px;
@@ -480,4 +474,25 @@ button {
 	border: 1px solid #2762BB;
 }
 /******** admin manageBlock style end ********/
+/** pagination **/
 
+.pagination{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination span{
+}
+
+.pagination span a{
+    padding: 3px 10px;
+    border-radius: 10px;
+    background: #2F95CE;
+    color: #FFF;
+    display: inline-block;
+
+}
+
+.pagination span a:hover{
+    color: #000;
+}

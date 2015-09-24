@@ -1,0 +1,51 @@
+<include file="Admin/header"/>
+<body>
+<include file="Admin/sidebar"/>
+<div id="main">
+    <div id="main_page_content">
+        <div id="main_title"><h2>管理页面</h2></div>
+        <div id="main_body">
+            <div id="article_manage_table">
+                <table id="article_manage" class="page" cellpadding="0" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th class="articleTable_id">页面id</th>
+                        <th class="articleTable_title">标题</th>
+                        <th class="articleTable_author">作者</th>
+                        <th class="articleTable_publisher">发布者</th>
+                        <th class="articleTable_category">分类</th>
+                        <th class="articleTable_updateTime">更新时间</th>
+                        <th class="articleTable_state">状态</th>
+                        <th class="articleTable_hit">点击量</th>
+                        <td class="articleTable_preview">预览</a>
+                        <th class="articleTable_delete">审核</th>
+                        <th class="articleTable_update">修改</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    </tr>
+                    <volist name="page" id="var" empty="没有数据">
+                        <tr>
+                            <td class="articleTable_id">{$var.id}</td>
+                            <td class="articleTable_title">{$var.title}</td>
+                            <td class="articleTable_author">{$var.author}</td>
+                            <td class="articleTable_publisher">{$var.publisher}</td>
+                            <td class="articleTable_category">{$var.name}</td>
+                            <td class="articleTable_updateTime">{$var.pubdate}</td>
+                            <td class="articleTable_state">{$var.state}</td>
+                            <th class="articleTable_hit">{$var.hit}</th>
+                            <td class="articleTable_preview"><a href="__MODULE__/Page/preview/{$var.id}" target="_blank">预览</a>
+                            <td class="articleTable_verify"><a class="verify" val="__MODULE__/Page/verify/{$var.id}">审核</a>
+                            <td class="articleTable_update"><a href="__MODULE__/Page/update/{$var.id}" target="_blank">修改</a></td>
+
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

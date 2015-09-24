@@ -1,0 +1,38 @@
+<include file="Admin/header"/>
+<body>
+<include file="Admin/sidebar"/>
+<div id="main">
+    <div id="main_page_content">
+        <div id="main_title"><h2>所有用户</h2></div>
+        <div id="main_body">
+            <table id="user_manage" class="user" cellpadding="0" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>用户名</th>
+                    <th>社团/组织</th>
+                    <th>最后登录时间</th>
+                    <th>最后登录ip</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody id="allUser">
+                <volist name="users" id="var" empty="没有数据">
+                    <tr>
+                        <td>{$var.name}</td>
+                        <td>{$var.organization}</td>
+                        <td>{$var.login_time}</td>
+                        <td>....</td>
+                        <td>
+                            <a class="delete_user" val="__MODULE__/User/deleteUser/{$var.id}">删除</a>
+                        </td>
+                    </tr>
+                </volist>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

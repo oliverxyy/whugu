@@ -20,8 +20,7 @@ define('APP_DEBUG',True);
 // 定义应用目录
 define('APP_PATH','./app/');
 
-//定义Admin模块
-//define('ADMIN_PATH','./Admin/');
+define('PROJECT_NAME','/whugu/');
 
 //define('BUILD_MODEL_LIST','User,Menu');
 

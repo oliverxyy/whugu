@@ -304,10 +304,10 @@ a.arr_r:hover {
 
 #division1 {
     width: 3px;
-    height: 160px;
+    height: 280px;
     float: left;
     margin-right: 40px;
-    margin-top: 50px;
+    margin-top: 70px;
     background: #555;
 }
 
@@ -317,7 +317,7 @@ a.arr_r:hover {
     line-height: 60px;
     font-size: 18px;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 .related_link_content {
@@ -386,6 +386,7 @@ a.arr_r:hover {
     width: 100%;
     border-bottom: 4px solid #1C8D8A;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .list{

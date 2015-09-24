@@ -5,15 +5,17 @@
  * Date: 2015/9/4
  * Time: 23:22
  */
+namespace Home\Model;
+use Think\Model;
 
-class ArticleModel {
+class ArticleModel extends Model{
     private $id;
-    private $name;
+    private $title;
     private $content;
     private $author;
     private $editor;
     private $publisher;
-    private $time;
+    private $pubdate;
     private $hit;
     private $state;
     private $hasImg;
@@ -37,18 +39,19 @@ class ArticleModel {
     /**
      * @return mixed
      */
-    public function getName()
+    public function getTitle()
     {
-        return $this->name;
+        return $this->title;
     }
 
     /**
-     * @param mixed $name
+     * @param mixed $title
      */
-    public function setName($name)
+    public function setTitle($title)
     {
-        $this->name = $name;
+        $this->title = $title;
     }
+
 
     /**
      * @return mixed
@@ -117,18 +120,19 @@ class ArticleModel {
     /**
      * @return mixed
      */
-    public function getTime()
+    public function getPubdate()
     {
-        return $this->time;
+        return $this->pubdate;
     }
 
     /**
-     * @param mixed $time
+     * @param mixed $pubdate
      */
-    public function setTime($time)
+    public function setPubdate($pubdate)
     {
-        $this->time = $time;
+        $this->pubdate = $pubdate;
     }
+
 
     /**
      * @return mixed

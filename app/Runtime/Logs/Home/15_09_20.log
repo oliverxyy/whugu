@@ -1,0 +1,606 @@
+[ 2015-09-20T13:13:58+08:00 ] ::1 /whugu/Home/Article/addArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:addArticle
+
+[ 2015-09-20T13:14:02+08:00 ] ::1 /whugu/Home/Article/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=1 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0730s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=2 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=3 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=4 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=5 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=6 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:14:02+08:00 ] ::1 /whugu/Public/static/img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:14:07+08:00 ] ::1 /whugu/Home/article/12755
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `article` WHERE `id` = 12755 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `article` SET `cid`='1',`title`='啊啊啊啊',`content`='<p><img src=\"/whugu/Uploads/ueditor/image/20150920/55fe403ce7f8a.jpg\" title=\"55fe403ce7f8a.jpg\" alt=\"Desert.jpg\"/></p>',`author`='啊啊啊啊',`publisher`='啊啊啊啊',`pubdate`='2015-09-20 13:12:32',`hit`='1',`state`='0' WHERE `id` = 12755 [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:14:11+08:00 ] ::1 /whugu/Home/article/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 9 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 11 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 12 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 13 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 14 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 41 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 42 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 83 行.
+NOTIC: [8] Undefined variable: category C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 83 行.
+NOTIC: [8] Undefined variable: list C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 86 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 96 行.
+NOTIC: [8] Undefined variable: category C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 96 行.
+NOTIC: [8] Undefined variable: paginationPointer C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 96 行.
+NOTIC: [8] Undefined variable: pagination C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 97 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 98 行.
+NOTIC: [8] Undefined variable: category C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 98 行.
+NOTIC: [8] Undefined variable: paginationPointer C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 98 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 105 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 105 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 119 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 125 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 131 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:14:11+08:00 ] ::1 /whugu/Home/article/Public/static/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+ERR: 非法操作:Public
+
+[ 2015-09-20T13:14:12+08:00 ] ::1 /whugu/Home/article/Public/static/js/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:Public
+
+[ 2015-09-20T13:14:12+08:00 ] ::1 /whugu/Home/article/Public/static/js/jquery.tools.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:Public
+
+[ 2015-09-20T13:14:14+08:00 ] ::1 /whugu/Home/article/Public/static/js/scripts.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:Public
+
+[ 2015-09-20T13:14:14+08:00 ] ::1 /whugu/Home/article/Public/static/img/slider/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-20T13:14:14+08:00 ] ::1 /whugu/Home/article/Public/static/img/icon_down.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-20T13:14:14+08:00 ] ::1 /whugu/Home/article/Public/static/img/icon_up.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:14:14+08:00 ] ::1 /whugu/Home/article/Public/static/img/microPlatform3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:14:14+08:00 ] ::1 /whugu/Home/article/Public/static/img/microPlatform1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-09-20T13:14:14+08:00 ] ::1 /whugu/Home/article/Public/static/img/microPlatform4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:14:15+08:00 ] ::1 /whugu/Home/article/Public/static/img/microPlatform2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:14:15+08:00 ] ::1 /whugu/Home/article/Public/static/img/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:17:02+08:00 ] ::1 /whugu/Home/article/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 9 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 11 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 12 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 13 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 14 行.
+NOTIC: [8] Undefined variable: category C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 83 行.
+NOTIC: [8] Undefined variable: list C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 86 行.
+NOTIC: [8] Undefined variable: category C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 96 行.
+NOTIC: [8] Undefined variable: paginationPointer C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 96 行.
+NOTIC: [8] Undefined variable: pagination C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 97 行.
+NOTIC: [8] Undefined variable: category C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 98 行.
+NOTIC: [8] Undefined variable: paginationPointer C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:17:02+08:00 ] ::1 /whugu/Home/article/Public/static/js/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 非法操作:Public
+
+[ 2015-09-20T13:17:02+08:00 ] ::1 /whugu/Home/article/Public/static/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:Public
+
+[ 2015-09-20T13:17:02+08:00 ] ::1 /whugu/Home/article/Public/static/js/jquery.tools.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:Public
+
+[ 2015-09-20T13:17:03+08:00 ] ::1 /whugu/Home/article/Public/static/js/scripts.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:Public
+
+[ 2015-09-20T13:17:06+08:00 ] ::1 /whugu/Home/article/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 9 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 11 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 12 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 13 行.
+NOTIC: [8] Undefined variable: PROJECT_NAME C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 14 行.
+NOTIC: [8] Undefined variable: category C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 83 行.
+NOTIC: [8] Undefined variable: list C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 86 行.
+NOTIC: [8] Undefined variable: category C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 96 行.
+NOTIC: [8] Undefined variable: paginationPointer C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 96 行.
+NOTIC: [8] Undefined variable: pagination C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 97 行.
+NOTIC: [8] Undefined variable: category C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 98 行.
+NOTIC: [8] Undefined variable: paginationPointer C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:17:06+08:00 ] ::1 /whugu/Home/article/Public/static/js/scripts.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:Public
+
+[ 2015-09-20T13:17:06+08:00 ] ::1 /whugu/Home/article/Public/static/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 非法操作:Public
+
+[ 2015-09-20T13:17:06+08:00 ] ::1 /whugu/Home/article/Public/static/js/jquery.tools.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:Public
+
+[ 2015-09-20T13:17:07+08:00 ] ::1 /whugu/Home/article/Public/static/js/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:Public
+
+[ 2015-09-20T13:17:22+08:00 ] ::1 /whugu/Home/article/Public/static/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:Public
+
+[ 2015-09-20T13:18:13+08:00 ] ::1 /whugu/Home/article/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: category C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 83 行.
+NOTIC: [8] Undefined variable: list C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 86 行.
+NOTIC: [8] Undefined variable: category C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 96 行.
+NOTIC: [8] Undefined variable: paginationPointer C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 96 行.
+NOTIC: [8] Undefined variable: pagination C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 97 行.
+NOTIC: [8] Undefined variable: category C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 98 行.
+NOTIC: [8] Undefined variable: paginationPointer C:\www\whugu\app\Runtime\Cache\Home\b8bf801361fe36a327b11d710e5e405b.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:18:17+08:00 ] ::1 /whugu/Home/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=1 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=2 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=3 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=4 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=5 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=6 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:18:20+08:00 ] ::1 /whugu/Home/category/activity/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `category` WHERE `ename` = 'activity' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=1 ) LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `article` WHERE ( cid=1 ) LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:18:28+08:00 ] ::1 /whugu/Home/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=1 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=2 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=3 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=4 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=5 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=6 ) ORDER BY pubdate desc LIMIT 6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+NOTIC: [8] Use of undefined constant php - assumed 'php' C:\www\whugu\app\Runtime\Cache\Home\0b6b5a4469edc68d5c1e1a465947b0f4.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:18:32+08:00 ] ::1 /whugu/Home/category/activity/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `category` WHERE `ename` = 'activity' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=1 ) LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `article` WHERE ( cid=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-09-20T13:19:58+08:00 ] ::1 /whugu/Home/category/activity/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `category` WHERE `ename` = 'activity' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,`pubdate` FROM `article` WHERE ( cid=1 ) ORDER BY pubdate desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `article` WHERE ( cid=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:20:02+08:00 ] ::1 /whugu/Home/article/12755
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `article` WHERE `id` = 12755 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `article` SET `cid`='1',`title`='啊啊啊啊',`content`='<p><img src=\"/whugu/Uploads/ueditor/image/20150920/55fe403ce7f8a.jpg\" title=\"55fe403ce7f8a.jpg\" alt=\"Desert.jpg\"/></p>',`author`='啊啊啊啊',`publisher`='啊啊啊啊',`pubdate`='2015-09-20 13:12:32',`hit`='2',`state`='0' WHERE `id` = 12755 [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-20T13:20:08+08:00 ] ::1 /whugu/Home/article/12755
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `article` WHERE `id` = 12755 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `article` SET `cid`='1',`title`='啊啊啊啊',`content`='<p><img src=\"/whugu/Uploads/ueditor/image/20150920/55fe403ce7f8a.jpg\" title=\"55fe403ce7f8a.jpg\" alt=\"Desert.jpg\"/></p>',`author`='啊啊啊啊',`publisher`='啊啊啊啊',`pubdate`='2015-09-20 13:12:32',`hit`='3',`state`='0' WHERE `id` = 12755 [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-20T13:20:14+08:00 ] ::1 /whugu/Home/article/12755
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `article` WHERE `id` = 12755 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `article` SET `cid`='1',`title`='啊啊啊啊',`content`='<p><img src=\"/whugu/Uploads/ueditor/image/20150920/55fe403ce7f8a.jpg\" title=\"55fe403ce7f8a.jpg\" alt=\"Desert.jpg\"/></p>',`author`='啊啊啊啊',`publisher`='啊啊啊啊',`pubdate`='2015-09-20 13:12:32',`hit`='4',`state`='0' WHERE `id` = 12755 [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
