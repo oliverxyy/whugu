@@ -28,6 +28,8 @@ class ArticleController extends Controller{
         $this->assign('rights',$rights);
         $this->assign('college',$college);
         $this->assign('download',$download);
+        //部门链接
+        $this->assign('department',$this->getDepartment());
         $this->display('index');
     }
     //文章正文页
@@ -37,9 +39,10 @@ class ArticleController extends Controller{
         //更新点击量
         $this->addHit($Article,$article);
         //获取分类名称
-        $article['CName'] = $this->getCategoryById($article['cid'])['name'];
+        $category = $this->getCategoryById($article['cid']);
         //变量
         $this->assign('banner',$this->addBanner());
+        $this->assign('category',$category);
         $this->assign('article',$article);
         $this->display('article');
     }
@@ -63,7 +66,11 @@ class ArticleController extends Controller{
         $this->assign('pagination',$pagination);
         $this->display('list');
     }
-
+    public function getDepartment(){
+        $Department = M('Page');
+        $department = $Department->field(true)->limit(0,15)->select();
+        return $department;
+    }
     //更新点击量数据
     public function addHit($Article,$article){
         $article['hit'] = $article['hit'] + 1;//增加点击量
@@ -135,7 +142,6 @@ class ArticleController extends Controller{
         }
         return $banner;
     }
-
 
 
 }

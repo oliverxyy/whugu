@@ -10,8 +10,13 @@ namespace Admin\Controller;
 use Think\Controller;
 
 class BannerController extends Controller{
-
+    /**
+     * banner板块权限设置：
+     * 1：无权限
+     * 2+：有操作权限
+     */
     public function index(){
+        $this->user_deny(1);
         $Banner = M('Banner');
         $banner = $Banner->select();
         for($i=0;$i<count($banner);$i++){
@@ -22,6 +27,7 @@ class BannerController extends Controller{
         $this->display('Admin/banner');
     }
     public function update($id){
+        $this->user_deny(1);
         $Banner = M('Banner');
         $banner = $Banner->find($id);
         $banner['action'] = C('PROJECT_PATH')."Admin/Banner/upload/".$id;
@@ -29,6 +35,7 @@ class BannerController extends Controller{
         $this->display('Admin/addBanner');
     }
     public function upload($id){
+        $this->user_deny(1);
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize = 1024*1024*100 ;// 设置附件上传大小100M
         $upload->exts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
@@ -62,5 +69,16 @@ class BannerController extends Controller{
         $MSG['state'] = $banner['state'];
         $Banner->save($banner);
         $this->ajaxReturn($MSG);
+    }
+    public function user_deny($level){
+        if(session('user.level')==null){
+            $this->error('尚未登录，无法访问！','login');
+        }
+        else if(session('user.level')<$level){
+            $this->error('权限不足，无法访问！');
+        }
+        else if(session('user.level')>4){
+            $this->error('权限出错，无法访问！');
+        }
     }
 }

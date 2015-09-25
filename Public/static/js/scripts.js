@@ -33,9 +33,22 @@ $(document).ready(function(){
             data:{
             },
             //请求成功后的回调函数有两个参数
-            success:function(){
-                $(p).parent().parent().remove();
-                alert("删除成功！");
+            success:function(data){
+                switch(data['state']){
+                    case -1:
+                        alert("权限不足，删除失败！");
+                        break;
+                    case 0:
+                        alert("删除操作失败！");
+                        break;
+                    case 1:
+                        $(p).parent().parent().remove();
+                        alert("删除成功！");
+                        break;
+                    default:
+                        alert("服务器权限处理错误！");
+                        break;
+                }
             },
             error:function(){
                 alert("请查看网络连接，删除操作失败！");

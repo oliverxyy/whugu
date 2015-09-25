@@ -24,15 +24,19 @@
         <ul>
             <li class="sidebar_list_level2"><a href="/whugu/Admin/User/logout">退出登陆</a></li>
             <li class="sidebar_list_level2"><a href="/whugu/Admin/User/changePdPage">修改密码</a></li>
-            <li class="sidebar_list_level2"><a href="/whugu/Admin/User/allUser">所有用户</a></li>
+            <?php if(session('user.level')>1){ ?>
+            <li class="sidebar_list_level2"><a href="/whugu/Admin/User/allUser/1">所有用户</a></li>
             <li class="sidebar_list_level2"><a href="/whugu/Admin/User/addUser">添加用户</a></li>
+            <?php } ?>
         </ul>
         <li class="sidebar_list_level1"><a href="#">文章管理</a></li>
         <ul>
             <li class="sidebar_list_level2"><a href="/whugu/Admin/Article/addArticle">添加文章</a></li>
+            <?php if(session('user.level')>1){ ?>
             <li class="sidebar_list_level2"><a href="/whugu/Admin/Article/allArticles/1">管理文章</a></li>
+            <?php } ?>
         </ul>
-
+        <?php if(session('user.level')>1){ ?>
         <li class="sidebar_list_level1"><a href="#">板块管理</a></li>
         <ul>
             <li class="sidebar_list_level2"><a href="/whugu/Admin/Banner/index">banner管理</a></li>
@@ -40,9 +44,11 @@
         </ul>
         <li class="sidebar_list_level1"><a href="#">访问统计</a></li>
         <ul>
-            <li class="sidebar_list_level2"><a href="">本地统计数据</a></li>
-            <li class="sidebar_list_level2"><a href="">CNZZ统计数据</a></li>
+            <li class="sidebar_list_level2"><a href="#">本地统计数据</a></li>
+            <li class="sidebar_list_level2"><a href="#">CNZZ统计数据</a></li>
         </ul>
+        <?php } ?>
+
     </ul>
 </div>
 <div id="main">
@@ -54,6 +60,7 @@
                 <tr>
                     <th>用户名</th>
                     <th>社团/组织</th>
+                    <th>权限</th>
                     <th>最后登录时间</th>
                     <th>最后登录ip</th>
                     <th>操作</th>
@@ -63,16 +70,21 @@
                 <?php if(is_array($users)): $i = 0; $__LIST__ = $users;if( count($__LIST__)==0 ) : echo "没有数据" ;else: foreach($__LIST__ as $key=>$var): $mod = ($i % 2 );++$i;?><tr>
                         <td><?php echo ($var["name"]); ?></td>
                         <td><?php echo ($var["organization"]); ?></td>
+                        <td><?php echo ($var["level"]); ?></td>
                         <td><?php echo ($var["login_time"]); ?></td>
                         <td>....</td>
                         <td>
+                            <a class="level_user" href="/whugu/Admin/User/changeLevel/<?php echo ($var["id"]); ?>">授权</a>
                             <a class="delete_user" val="/whugu/Admin/User/deleteUser/<?php echo ($var["id"]); ?>">删除</a>
                         </td>
                     </tr><?php endforeach; endif; else: echo "没有数据" ;endif; ?>
-
-
                 </tbody>
             </table>
+        </div>
+        <div class="pagination">
+            <span><a href="/whugu/Admin/User/allUser/<?php echo ($paginationPointer["last"]); ?>">上一页</a></span>
+            <?php if(is_array($pagination)): $i = 0; $__LIST__ = $pagination;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$var): $mod = ($i % 2 );++$i;?><span><a href="/whugu/Admin/User/allUser/<?php echo ($var); ?>"><?php echo ($var); ?></a></span><?php endforeach; endif; else: echo "" ;endif; ?>
+            <span><a href="/whugu/Admin/User/allUser/<?php echo ($paginationPointer["next"]); ?>">下一页</a></span>
         </div>
     </div>
 </div>

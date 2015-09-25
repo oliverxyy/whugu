@@ -40,8 +40,8 @@
         </ul>
         <li class="sidebar_list_level1"><a href="#">访问统计</a></li>
         <ul>
-            <li class="sidebar_list_level2"><a href="">本地统计数据</a></li>
-            <li class="sidebar_list_level2"><a href="">CNZZ统计数据</a></li>
+            <li class="sidebar_list_level2"><a href="#">本地统计数据</a></li>
+            <li class="sidebar_list_level2"><a href="#">CNZZ统计数据</a></li>
         </ul>
     </ul>
 </div>

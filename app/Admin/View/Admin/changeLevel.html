@@ -6,22 +6,10 @@
         <div id="main_title"><h2>添加用户</h2></div>
         <div id="main_body">
             <div id="addUser">
-                <form action="__MODULE__/User/add" method="post">
+                <form action="__MODULE__/User/addLevel/{$user.id}" method="post">
                     <div class="addUser_row">
                         <div class="addUser_leftRow">用户名</div>
-                        <div class="addUser_rightRow"><input type="text" name="name"/></div>
-                    </div>
-                    <div class="addUser_row">
-                        <div class="addUser_leftRow">密码</div>
-                        <div class="addUser_rightRow"><input type="password" name="password"/></div>
-                    </div>
-                    <div class="addUser_row">
-                        <div class="addUser_leftRow">重复密码</div>
-                        <div class="addUser_rightRow"><input type="password" name="confirmPwd"/></div>
-                    </div>
-                    <div class="addUser_row">
-                        <div class="addUser_leftRow">社团/组织</div>
-                        <div class="addUser_rightRow"><input type="text" name="organization" placeholder="武汉大学研究生会"/></div>
+                        <div class="addUser_rightRow"><input type="text" name="name" value="{$user.name}" readonly="readonly"/></div>
                     </div>
                     <div class="addUser_row">
                         <div class="addUser_leftRow">职位等级</div>

@@ -5,7 +5,7 @@
 	<!--header end-->
 	<div id="content">
         <!-- 第一行 -->
-        <div class="category_bar"><a href="{:U('Home/index/')}" class="category_bar_name">首页</a><a>&gt;</a><a class="category_bar_name">{$category.name}</a></div>
+        <div class="category_bar"><a href="{:U('Home/index/')}" class="category_bar_name">首页</a><a>&gt;</a><a class="category_bar_name" href="__ROOT__/Home/article/{$category.ename}/1">{$category.name}</a></div>
 		<div class="content_row list">
             <ul>
                 <volist name="list" id="var" empty="暂时没有数据">

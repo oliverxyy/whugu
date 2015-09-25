@@ -1,8 +1,10 @@
 /******* common style ******/
 body,#login_page{
 	width:1366px;
-	min-height:768px;
+	min-height:1024px;
 	margin:0 auto;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px  solid #e8e8e8;
 	font:12px/22px 'Microsoft Yahei','\5b8b\4f53',微软雅黑,Arial,Lucida Grande,Tahoma,sans-serif;
 }
 a {
@@ -193,7 +195,7 @@ button {
 /******** admin usingInfo style end ********/
 
 /******** admin manageUser style start ********/
-.delete_user{
+.delete_user,.level_user{
     padding: 7px 15px;
     background: #1e96d1;
     border-radius: 5px;
@@ -265,9 +267,9 @@ button {
 	line-height:34px;
 	float:left;
 }
-.addUser_rightRow input {
+.addUser_rightRow input,.addUser_rightRow select {
 	width:324px;
-	height:18px;
+    height: 18px;
 	font-size: 12px;
 	line-height: 18px;
 	color: #555;
@@ -276,6 +278,11 @@ button {
 	border-radius: 4px;
 }
 
+.addUser_rightRow select{
+    width:350px;
+    height:30px;
+    padding: 3px 12px;
+}
 .addUser_rightRow button{
 	width:334px;
 	height:34px;
@@ -429,10 +436,6 @@ button {
 #addBlock {
 	width:1080px;
 	padding-top:100px;
-}
-.addUser_rightRow select{
-	height:24px;
-	margin:5px auto;
 }
 .addBlock_rightRow {
 	width:840px;

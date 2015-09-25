@@ -24,10 +24,8 @@
         <ul>
             <li class="sidebar_list_level2"><a href="/whugu/Admin/User/logout">退出登陆</a></li>
             <li class="sidebar_list_level2"><a href="/whugu/Admin/User/changePdPage">修改密码</a></li>
-            <?php if(session('user.level')>1){ ?>
             <li class="sidebar_list_level2"><a href="/whugu/Admin/User/allUser">所有用户</a></li>
             <li class="sidebar_list_level2"><a href="/whugu/Admin/User/addUser">添加用户</a></li>
-            <?php } ?>
         </ul>
         <li class="sidebar_list_level1"><a href="#">文章管理</a></li>
         <ul>
@@ -42,8 +40,8 @@
         </ul>
         <li class="sidebar_list_level1"><a href="#">访问统计</a></li>
         <ul>
-            <li class="sidebar_list_level2"><a href="#">本地统计数据</a></li>
-            <li class="sidebar_list_level2"><a href="#">CNZZ统计数据</a></li>
+            <li class="sidebar_list_level2"><a href="">本地统计数据</a></li>
+            <li class="sidebar_list_level2"><a href="">CNZZ统计数据</a></li>
         </ul>
     </ul>
 </div>
@@ -52,22 +50,10 @@
         <div id="main_title"><h2>添加用户</h2></div>
         <div id="main_body">
             <div id="addUser">
-                <form action="/whugu/Admin/User/add" method="post">
+                <form action="/whugu/Admin/User/addLevel/<?php echo ($user["id"]); ?>" method="post">
                     <div class="addUser_row">
                         <div class="addUser_leftRow">用户名</div>
-                        <div class="addUser_rightRow"><input type="text" name="name"/></div>
-                    </div>
-                    <div class="addUser_row">
-                        <div class="addUser_leftRow">密码</div>
-                        <div class="addUser_rightRow"><input type="password" name="password"/></div>
-                    </div>
-                    <div class="addUser_row">
-                        <div class="addUser_leftRow">重复密码</div>
-                        <div class="addUser_rightRow"><input type="password" name="confirmPwd"/></div>
-                    </div>
-                    <div class="addUser_row">
-                        <div class="addUser_leftRow">社团/组织</div>
-                        <div class="addUser_rightRow"><input type="text" name="organization" placeholder="武汉大学研究生会"/></div>
+                        <div class="addUser_rightRow"><input type="text" name="name" value="<?php echo ($user["name"]); ?>" readonly="readonly"/></div>
                     </div>
                     <div class="addUser_row">
                         <div class="addUser_leftRow">职位等级</div>

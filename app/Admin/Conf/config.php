@@ -1,7 +1,10 @@
 <?php
 return array(
     'URL_ROUTE_RULES'=>array(
+        'User/changeLevel/:id\d$' => 'User/changeLevel',
+        'User/addLevel/:id\d$' => 'User/addLevel',
         'User/deleteUser/:id\d$' => 'User/deleteUser',
+        'User/allUser/:id\d$' => 'User/allUser',
         'Article/allArticles/:id\d$' => 'Article/allArticles',//管理文章url重新定义
         'Article/verify/:id\d$' => 'Article/verify',
         'Article/updatePage/:id\d$' => 'Article/updatePage',

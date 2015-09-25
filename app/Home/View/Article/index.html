@@ -205,24 +205,14 @@
                 <!--图标列表 begin-->
                 <div class="block_content">
                     <ul>
-
-                        <li><img src="__PUBLIC__/static/img/department_link/1.png" height="75" width="75" /><div class="department_link_item_info">研会办公室</div></li>
-                        <li><img src="__PUBLIC__/static/img/department_link/2.png" height="75" width="75" /><div class="department_link_item_info">常代会办公室</div></li>
-                        <li><img src="__PUBLIC__/static/img/department_link/3.png" height="75" width="75" /><div class="department_link_item_info">创意设计中心</div></li>
-                        <li><img src="__PUBLIC__/static/img/department_link/4.png" height="75" width="75" /><div class="department_link_item_info">新媒体运营部</div></li>
-                        <li><img src="__PUBLIC__/static/img/department_link/5.png" height="75" width="75" /><div class="department_link_item_info">人力资源部</div></li>
-
-                        <li><img src="__PUBLIC__/static/img/department_link/6.png" height="75" width="75" /><div class="department_link_item_info">调研部</div></li>
-                        <li><img src="__PUBLIC__/static/img/department_link/7.png" height="75" width="75" /><div class="department_link_item_info">外联部</div></li>
-                        <li><img src="__PUBLIC__/static/img/department_link/8.png" height="75" width="75" /><div class="department_link_item_info">文艺部</div></li>
-                        <li><img src="__PUBLIC__/static/img/department_link/9.png" height="75" width="75" /><div class="department_link_item_info">体育部</div></li>
-                        <li><img src="__PUBLIC__/static/img/department_link/10.png" height="75" width="75" /><div class="department_link_item_info">女生部</div></li>
-
-                        <li><img src="__PUBLIC__/static/img/department_link/11.png" height="75" width="75" /><div class="department_link_item_info">学术科技部</div></li>
-                        <li><img src="__PUBLIC__/static/img/department_link/12.png" height="75" width="75" /><div class="department_link_item_info">生活权益部</div></li>
-                        <li><img src="__PUBLIC__/static/img/department_link/13.png" height="75" width="75" /><div class="department_link_item_info">创意实践部</div></li>
-                        <li><img src="__PUBLIC__/static/img/department_link/14.png" height="75" width="75" /><div class="department_link_item_info">心理互助部</div></li>
-                        <li><img src="__PUBLIC__/static/img/department_link/15.png" height="75" width="75" /><div class="department_link_item_info">博士生分会</div></li>
+                        <volist name="department" id="var" empty="暂时没有数据">
+                            <li>
+                                <a href="__ROOT__/Home/article/{$var.aid}" target="_blank">
+                                    <img src="__PUBLIC__/static/img/department_link/{$var.id}.png" height="75" width="75" />
+                                    <div class="department_link_item_info">{$var.name}</div>
+                                </a>
+                            </li>
+                        </volist>
                     </ul>
                 </div>
                 <!--图标列表 end-->

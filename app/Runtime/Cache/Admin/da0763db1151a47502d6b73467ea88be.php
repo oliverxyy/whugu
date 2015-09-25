@@ -50,7 +50,7 @@
         <div id="main_title"><h2>管理文章</h2></div>
         <div id="main_body">
             <div id="article_manage_table">
-                <table id="article_manage" cellpadding="0" cellspacing="0">
+                <table id="article_manage" class="article" cellpadding="0" cellspacing="0">
                     <thead>
                     <tr>
                         <th class="articleTable_id">文章id</th>

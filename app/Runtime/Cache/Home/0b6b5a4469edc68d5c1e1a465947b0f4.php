@@ -50,23 +50,23 @@
     <div id="menu_bar">
         <ul>
             <li>
-                <a class="menu_content" href="/whugu/Home/category/">研会介绍</a>
+                <a class="menu_content" href="/whugu/Admin/Page/preview/16">研会介绍</a>
                 <div class="down_icon"></div>
             </li>
             <li>
-                <a class="menu_content" href="/whugu/Home/category/">研会活动</a>
+                <a class="menu_content" href="/whugu/Home/category/activity/1">研会活动</a>
                 <div class="down_icon"></div>
             </li>
             <li>
-                <a class="menu_content">生活服务</a>
+                <a class="menu_content" href="/whugu/Home/category/activity/1">生活服务</a>
                 <div class="down_icon"></div>
             </li>
             <li>
-                <a class="menu_content">通知公告</a>
+                <a class="menu_content" href="/whugu/Home/category/activity/1">通知公告</a>
                 <div class="down_icon"></div>
             </li>
             <li>
-                <a class="menu_content">资源共享</a>
+                <a class="menu_content" href="/whugu/Home/category/download/1">资源共享</a>
                 <div class="down_icon"></div>
             </li>
         </ul>
@@ -264,30 +264,12 @@
                 <!--图标列表 begin-->
                 <div class="block_content">
                     <ul>
-                        <!--<?php
- for($i=0;$i<15;$i++){ ?>
-                        <li>
-                            <img src="../../../Public/static/images/department_link/<?php?>.png" height="110" width="110" />
-                        </li>
-                        <?php
- } ?>-->
-                        <li><img src="/whugu/Public/static/img/department_link/1.png" height="75" width="75" /><div class="department_link_item_info">研会办公室</div></li>
-                        <li><img src="/whugu/Public/static/img/department_link/2.png" height="75" width="75" /><div class="department_link_item_info">常代会办公室</div></li>
-                        <li><img src="/whugu/Public/static/img/department_link/3.png" height="75" width="75" /><div class="department_link_item_info">创意设计中心</div></li>
-                        <li><img src="/whugu/Public/static/img/department_link/4.png" height="75" width="75" /><div class="department_link_item_info">新媒体运营部</div></li>
-                        <li><img src="/whugu/Public/static/img/department_link/5.png" height="75" width="75" /><div class="department_link_item_info">人力资源部</div></li>
-
-                        <li><img src="/whugu/Public/static/img/department_link/6.png" height="75" width="75" /><div class="department_link_item_info">调研部</div></li>
-                        <li><img src="/whugu/Public/static/img/department_link/7.png" height="75" width="75" /><div class="department_link_item_info">外联部</div></li>
-                        <li><img src="/whugu/Public/static/img/department_link/8.png" height="75" width="75" /><div class="department_link_item_info">文艺部</div></li>
-                        <li><img src="/whugu/Public/static/img/department_link/9.png" height="75" width="75" /><div class="department_link_item_info">体育部</div></li>
-                        <li><img src="/whugu/Public/static/img/department_link/10.png" height="75" width="75" /><div class="department_link_item_info">女生部</div></li>
-
-                        <li><img src="/whugu/Public/static/img/department_link/11.png" height="75" width="75" /><div class="department_link_item_info">学术科技部</div></li>
-                        <li><img src="/whugu/Public/static/img/department_link/12.png" height="75" width="75" /><div class="department_link_item_info">生活权益部</div></li>
-                        <li><img src="/whugu/Public/static/img/department_link/13.png" height="75" width="75" /><div class="department_link_item_info">创意实践部</div></li>
-                        <li><img src="/whugu/Public/static/img/department_link/14.png" height="75" width="75" /><div class="department_link_item_info">心理互助部</div></li>
-                        <li><img src="/whugu/Public/static/img/department_link/15.png" height="75" width="75" /><div class="department_link_item_info">博士生分会</div></li>
+                        <?php if(is_array($department)): $i = 0; $__LIST__ = $department;if( count($__LIST__)==0 ) : echo "暂时没有数据" ;else: foreach($__LIST__ as $key=>$var): $mod = ($i % 2 );++$i;?><li>
+                                <a href="/whugu/Home/article/<?php echo ($var["aid"]); ?>" target="_blank">
+                                    <img src="/whugu/Public/static/img/department_link/<?php echo ($var["id"]); ?>.png" height="75" width="75" />
+                                    <div class="department_link_item_info"><?php echo ($var["name"]); ?></div>
+                                </a>
+                            </li><?php endforeach; endif; else: echo "暂时没有数据" ;endif; ?>
                     </ul>
                 </div>
                 <!--图标列表 end-->

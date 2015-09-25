@@ -28,59 +28,56 @@
             });
         })
     </script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256439335'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1256439335' type='text/javascript'%3E%3C/script%3E"));</script>
 </head>
 <body>
 	<!--header begin-->
-	<div id="header">
-        <div id="slider" class="banner">
-            <div class="wrap">
-                <div class="pan">
-                    <!--<a href="#" style="display:inline;"><img src="static/img/slide_big/1.jpg" width="1348" height="261" alt=""></a>
-                    <a href="#" style="display:none;"><img src="static/img/slide_big/2.jpg" width="1348" height="261" alt=""></a>
-                    <a href="#" style="display:none;"><img src="static/img/slide_big/3.jpg" width="1348" height="261" alt=""></a>-->
-                    <a href="#" style="display:none;"><img src="/whugu/Public/static/img/slider/1.png" width="1000" height="320" alt=""></a>
-                    <a href="#" style="display:none;"><img src="/whugu/Public/static/img/slider/1.png" width="1000" height="320" alt=""></a>
-                </div>
-                <a class="arr_l rf png"></a>
-                <a class="arr_r rf png"></a>
-                <!--缩略图,这里取消显示，需要可以向li标签里面添加img，并且display属性改为block-->
-                <ul class="tab lifl">
-                    <li class="current"></li>
-                    <li class=""></li>
-                </ul>
+    <div id="header">
+    <div id="slider" class="banner">
+        <div class="wrap">
+            <div class="pan">
+                <?php if(is_array($banner)): $i = 0; $__LIST__ = $banner;if( count($__LIST__)==0 ) : echo "暂时没有Banner图片" ;else: foreach($__LIST__ as $key=>$var): $mod = ($i % 2 );++$i;?><a href="<?php echo ($var["href"]); ?>" style="display:none;"><img src="<?php echo ($var["src"]); ?>" width="1000" height="320" alt="<?php echo ($var["title"]); ?>"></a><?php endforeach; endif; else: echo "暂时没有Banner图片" ;endif; ?>
             </div>
+            <a class="arr_l rf png"></a>
+            <a class="arr_r rf png"></a>
+            <!--缩略图,这里取消显示，需要可以向li标签里面添加img，并且display属性改为block-->
+            <ul class="tab lifl">
+                <li class="current"></li>
+                <?php if(is_array($banner)): $i = 0; $__LIST__ = array_slice($banner,1,null,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$var): $mod = ($i % 2 );++$i;?><li class=""></li><?php endforeach; endif; else: echo "" ;endif; ?>
+            </ul>
         </div>
-        <!--menu 栏开始-->
-		<div id="menu_bar">
-			<ul>
-				<li>
-					<a class="menu_content" href="">研会介绍</a>
-					<div class="down_icon"></div>
-				</li>
-				<li>
-					<a class="menu_content">研会活动</a>
-					<div class="down_icon"></div>
-				</li>
-				<li>
-					<a class="menu_content">生活服务</a>
-					<div class="down_icon"></div>
-				</li>
-				<li>
-					<a class="menu_content">通知公告</a>
-					<div class="down_icon"></div>
-				</li>
-				<li>
-					<a class="menu_content">资源共享</a>
-					<div class="down_icon"></div>
-				</li>
-			</ul>
-		</div>
-		<!--menu 栏结束-->
-	</div>
+    </div>
+    <!--menu 栏开始-->
+    <div id="menu_bar">
+        <ul>
+            <li>
+                <a class="menu_content" href="/whugu/Admin/Page/preview/16">研会介绍</a>
+                <div class="down_icon"></div>
+            </li>
+            <li>
+                <a class="menu_content" href="/whugu/Home/category/activity/1">研会活动</a>
+                <div class="down_icon"></div>
+            </li>
+            <li>
+                <a class="menu_content" href="/whugu/Home/category/rihgts/1">生活服务</a>
+                <div class="down_icon"></div>
+            </li>
+            <li>
+                <a class="menu_content" href="/whugu/Home/category/inform/1">通知公告</a>
+                <div class="down_icon"></div>
+            </li>
+            <li>
+                <a class="menu_content" href="/whugu/Home/category/download/1">资源共享</a>
+                <div class="down_icon"></div>
+            </li>
+        </ul>
+    </div>
+    <!--menu 栏结束-->
+</div>
 	<!--header end-->
 	<div id="content">
         <!-- 第一行 -->
-        <div class="category_bar"><a href="/whugu/Home/index/" class="category_bar_name">首页</a><a>&gt;</a><a href="list.html" class="category_bar_name"><?php echo ($article["CName"]); ?></a><a>&gt;</a><a class="category_bar_name">正文</a></div>
+        <div class="category_bar"><a href="/whugu/Home/index/" class="category_bar_name">首页</a><a>&gt;</a><a href="/whugu/Home/category/<?php echo ($category["ename"]); ?>/1" class="category_bar_name"><?php echo ($category["name"]); ?></a><a>&gt;</a><a class="category_bar_name">正文</a></div>
 		<div class="content_row article">
             <div class="context_header">
                 <div class="context_header_title"><?php echo ($article["title"]); ?></div>

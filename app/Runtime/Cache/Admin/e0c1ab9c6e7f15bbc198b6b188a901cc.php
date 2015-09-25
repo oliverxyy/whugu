@@ -24,8 +24,10 @@
         <ul>
             <li class="sidebar_list_level2"><a href="/whugu/Admin/User/logout">退出登陆</a></li>
             <li class="sidebar_list_level2"><a href="/whugu/Admin/User/changePdPage">修改密码</a></li>
+            <?php if(session('user.level')>1){ ?>
             <li class="sidebar_list_level2"><a href="/whugu/Admin/User/allUser">所有用户</a></li>
             <li class="sidebar_list_level2"><a href="/whugu/Admin/User/addUser">添加用户</a></li>
+            <?php } ?>
         </ul>
         <li class="sidebar_list_level1"><a href="#">文章管理</a></li>
         <ul>
@@ -40,8 +42,8 @@
         </ul>
         <li class="sidebar_list_level1"><a href="#">访问统计</a></li>
         <ul>
-            <li class="sidebar_list_level2"><a href="">本地统计数据</a></li>
-            <li class="sidebar_list_level2"><a href="">CNZZ统计数据</a></li>
+            <li class="sidebar_list_level2"><a href="#">本地统计数据</a></li>
+            <li class="sidebar_list_level2"><a href="#">CNZZ统计数据</a></li>
         </ul>
     </ul>
 </div>

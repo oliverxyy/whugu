@@ -10,8 +10,13 @@ namespace Admin\Controller;
 use Think\Controller;
 
 class PageController extends Controller{
-
+    /**
+     * page板块权限设置：
+     * 1：无权限
+     * 2+：有操作权限
+     */
     public function index(){
+        $this->user_deny(1);
         $Page = M('Article');
         $data['cid'] = 7;
         $page = $Page->table("article a,page p")->field("p.id as id,a.id as aid2,title,content,author,publisher,pubdate,hit,state,name")->where("p.aid = a.id and cid = 7")->select();
@@ -19,12 +24,14 @@ class PageController extends Controller{
         $this->display('Admin/managePage');
     }
     public function preview($id){
+        $this->user_deny(1);
         $Page = M('Page');
         $page = $Page->find($id);
         $this->redirect('/Home/article/'.$page['aid']);
     }
     public function add(){}//预留添加页面方法
     public function update($id){
+        $this->user_deny(1);
         $Page = M('Page');
         $Article = M('Article');
         $page = $Page->find($id);
@@ -35,6 +42,7 @@ class PageController extends Controller{
         $this->display('Admin/addArticle');
     }
     public function save($id){
+        $this->user_deny(1);
         $Page = M('Page');
         $Article = M('Article');
         $data['id'] = $Page->find($id)['aid'];
@@ -47,6 +55,7 @@ class PageController extends Controller{
         $Article->save($data) == 1 ? $this->success("操作成功！") : $this->success("操作失败！");
     }
     public function verify($id){
+        $this->user_deny(1);
         $Page = M('Page');
         $Article = M('Article');
         $page = $Page->find($id);
@@ -56,7 +65,7 @@ class PageController extends Controller{
         $this->ajaxReturn($MSG);
     }
     public function delete($id){}//预留删除页面方法
-
+    //
     public function transform($articles){
         for($i=0;$i<count($articles);$i++){
             if($articles[$i]['state']=="0"){
@@ -67,5 +76,16 @@ class PageController extends Controller{
             }
         }
         return $articles;
+    }
+    public function user_deny($level){
+        if(session('user.level')==null){
+            $this->error('尚未登录，无法访问！','login');
+        }
+        else if(session('user.level')<$level){
+            $this->error('权限不足，无法访问！');
+        }
+        else if(session('user.level')>4){
+            $this->error('权限出错，无法访问！');
+        }
     }
 }
