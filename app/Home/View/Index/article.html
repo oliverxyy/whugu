@@ -1,0 +1,47 @@
+<include file="Index/header" />
+<body>
+	<!--header begin-->
+    <include file="Index/banner"/>
+	<!--header end-->
+	<div id="content">
+        <!-- 第一行 -->
+        <div class="category_bar"><a href="__ROOT__/Home/index/" class="category_bar_name">首页</a><a>&gt;</a><a href="__ROOT__/Home/category/{$category.ename}/1" class="category_bar_name">{$category.name}</a><a>&gt;</a><a class="category_bar_name">正文</a></div>
+		<div class="content_row article">
+            <div class="context_header">
+                <div class="context_header_title">{$article.title}</div>
+                <span>作者：【{$article.author}】</span>
+                <span>点击量：【{$article.hit}】</span>
+                <br />
+                <span>发布者：【 {$article.publisher} 】</span>
+                <span>发布时间：【{$article.pubdate}】</span>
+            </div>
+            <div class="content_division"></div>
+            <div class="context_body">
+                {$article.content}
+            </div>
+		</div>
+        <div class="content_division"></div>
+        <div class="content_row">
+            <!-- 多说评论框 start -->
+            <div class="ds-thread" data-thread-key="{$article.id}" data-title="{$article.title}" data-url="__ROOT__/Home/article/{$article.id}"></div>
+            <!-- 多说评论框 end -->
+            <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+            <script type="text/javascript">
+                var duoshuoQuery = {short_name:"guwhu"};
+                (function() {
+                    var ds = document.createElement('script');
+                    ds.type = 'text/javascript';ds.async = true;
+                    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                    ds.charset = 'UTF-8';
+                    (document.getElementsByTagName('head')[0]
+                    || document.getElementsByTagName('body')[0]).appendChild(ds);
+                })();
+            </script>
+            <!-- 多说公共JS代码 end -->
+
+        </div>
+	</div>
+	<include file="Index/footer"/>
+</body>
+</html>
+  

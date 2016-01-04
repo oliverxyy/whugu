@@ -1,0 +1,33 @@
+<include file="Index/header" />
+<body>
+	<!--header begin-->
+    <include file="Index/banner"/>
+	<!--header end-->
+	<div id="content">
+        <!-- 第一行 -->
+        <div class="category_bar"><a href="{:U('Home/index/')}" class="category_bar_name">首页</a><a>&gt;</a><a class="category_bar_name">搜索结果</a></div>
+		<div class="content_row list">
+            <ul>
+                <volist name="list" id="var" empty="暂时没有数据">
+                    <li>
+                        <a href="__MODULE__/article/{$var.id}">
+                            <div class="list_text">{$var.title}</div>
+                            <div class="list_date">{$var.pubdate|substr=0,10}</div>
+                        </a>
+                    </li>
+                </volist>
+            </ul>
+		</div>
+        <div class="content_division"></div>
+        <div class="pagination">
+                <span><a href="__MODULE__/search/{$paginationPointer.last}">上一页</a></span>
+                <volist name="pagination" id="var" empty="">
+                    <span><a href="__MODULE__/search/{$var}">{$var}</a></span>
+                </volist>
+                <span><a href="__MODULE__/search/{$paginationPointer.next}">下一页</a></span>
+        </div>
+	</div>
+	<include file="Index/footer"/>
+</body>
+</html>
+  

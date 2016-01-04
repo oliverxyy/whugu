@@ -34,12 +34,11 @@ class UserController extends Controller{
     public function index(){
         $User = M('User');
         $data['name'] = $_POST['name'];
-        $data['password'] = $_POST['password'];
-        $this->assign('PROJECT_NAME',PROJECT_NAME);
+        $data['password'] = md5($_POST['password']);
         if($User->where($data)->find()!=null){
             session('user',$this->getUser($data['name']));
-            $data2['loginTime'] = date('Y-m-d H:i:s',time());
-            $User->where($data)->data($data2)->save();//更新登录时间
+            $data2['login_time'] = date('Y-m-d H:i:s',time());
+            $User->where($data)->save($data2);//更新登录时间
             $this->display('Admin/info');
         }
         else{
@@ -56,20 +55,22 @@ class UserController extends Controller{
         session('user',null);
         $this->display('Admin/login');
     }
-    //修改密码界面
+    //修改信息界面
     public function changePdPage(){
         $this->user_deny(1);
         $this->assign('username',session('user.name'));
         $this->display('Admin/changePd');
     }
-    //修改密码操作
+    //修改信息操作
     public function changePd(){
         $this->user_deny(1);
         $User = M('User');
         $data['id'] = session('user.id');
-        $data['password'] = $_POST['password'];
         if($_POST['password']==$_POST['confirmPwd']){
+            $data['name'] = $_POST['name'];
+            $data['password'] = md5($_POST['password']);//md5加密
             $User->save($data);
+            session('user',$this->getUser($data['name']));//重新设置session
             $this->success('修改成功！');
         }
         else{
@@ -78,7 +79,7 @@ class UserController extends Controller{
     }
     //查看所有用户
     public function allUser($id){
-        $this->user_deny(1);
+        $this->user_deny(2);
         $User = M('User');
         $data['level'] = array('elt',session('user.level'));
         $users = $User->field('id,name,organization,level,login_time')->where($data)->order('level desc')->page($id,15)->select();
@@ -94,7 +95,7 @@ class UserController extends Controller{
     }
     //添加用户页面
     public function addUser(){
-        $this->user_deny(1);
+        $this->user_deny(2);
         $level = $this->getLevelSelect();
         $this->assign('level',$level);
         $this->display('Admin/addUser');
@@ -110,6 +111,7 @@ class UserController extends Controller{
         if($_POST['password']==$_POST['confirmPwd']){
             if($data['level']<session('user.level')){
                 if($this->getUser($data['name'])==null){
+                    $data['password'] = md5($_POST['password']);//md5加密
                     $User->add($data);
                     $this->success('添加成功！');
                 }
@@ -127,7 +129,7 @@ class UserController extends Controller{
     }
     //授权界面
     public function changeLevel($id){
-        $this->user_deny(1);
+        $this->user_deny(2);
         $User = M('User');
         $user = $User->find($id);
         $this->assign('user',$user);
@@ -136,7 +138,7 @@ class UserController extends Controller{
     }
     //授权操作
     public function addLevel($id){
-        $this->user_deny(1);
+        $this->user_deny(2);
         $User = M('User');
         $data['id'] = $id;
         $data['level'] = $_POST['level'];
@@ -159,7 +161,7 @@ class UserController extends Controller{
      * @return json (-1,0,1)状态
      */
     public function deleteUser($id){
-        $this->user_deny(1);
+        $this->user_deny(2);
         $User = M('User');
         $user = $User->find($id);
         if($user['level']<session('user.level')){
@@ -175,13 +177,13 @@ class UserController extends Controller{
 
     //功能性方法
     //通过username获取user信息
-    public function getUser($username){
+    private function getUser($username){
         $User = M('User');
         $data['name'] = $username;
         return $User->field('id,name,organization,level')->where($data)->find();
     }
     //权限不足
-    public function user_deny($level){
+    private function user_deny($level){
         if(session('user.level')==null){
             $this->error('尚未登录，无法访问！','login');
         }
@@ -192,7 +194,7 @@ class UserController extends Controller{
             $this->error('权限出错，无法访问！');
         }
     }
-    public function getLevelSelect(){
+    private function getLevelSelect(){
         switch(session('user.level')){
             case "2":
                 $level[0]['name'] = "部委级";
@@ -218,7 +220,7 @@ class UserController extends Controller{
         }
         return $level;
     }
-    public function getLevelMSG($users){
+    private function getLevelMSG($users){
         for($i=0;$i<count($users);$i++){
             switch($users[$i]['level']){
                 case "1":
@@ -241,7 +243,7 @@ class UserController extends Controller{
         return $users;
     }
     //获取pagination
-    public function getPagination($id){
+    private function getPagination($id){
         $User = M('User');
         $data['level'] = array('elt',session('user.level'));
         $listNumber = 15;//列表数据数量

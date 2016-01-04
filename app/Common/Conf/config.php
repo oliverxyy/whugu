@@ -6,7 +6,7 @@ return array(
     'URL_MODEL' => 2,//开启rewrite模式
     'URL_ROUTER_ON' => true,//开启路由配置
     'URL_HTML_SUFFIX' => 'html',//配置默认后缀
-    "ERROR_PAGE" => '/404.html',
+    //"ERROR_PAGE" => '/404.html',
     /*'DB_CONFIG1' => array(//配置数据库连接
         'db_type' => 'mysql',
         'db_user' => 'root',
@@ -18,7 +18,7 @@ return array(
     /* 数据库设置 */
     'DB_TYPE'               =>  'mysql',     // 数据库类型
     'DB_HOST'               =>  'localhost', // 服务器地址
-    'DB_NAME'               =>  'whu',          // 数据库名
+    'DB_NAME'               =>  'whugu',          // 数据库名
     'DB_USER'               =>  'root',      // 用户名
     'DB_PWD'                =>  'admin',          // 密码
     'DB_PORT'               =>  '3306',        // 端口
@@ -33,6 +33,7 @@ return array(
     'DB_SLAVE_NO'           =>  '', // 指定从服务器序号
 
     //常量配置
-    'SLIDER_PATH' => '/whugu/Public/static/img/slider/',
-    'PROJECT_PATH' => '/whugu/',
+    'SLIDER_PATH' => '/guwhu/Public/static/img/slider/',
+    'SLIDER_PIC_PREFIX' => 'p',
+    'PROJECT_PATH' => '/guwhu/',
 );

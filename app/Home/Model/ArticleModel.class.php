@@ -19,6 +19,7 @@ class ArticleModel extends Model{
     private $hit;
     private $state;
     private $hasImg;
+    private $pid;
 
     /**
      * @return mixed
@@ -175,11 +176,19 @@ class ArticleModel extends Model{
     }
 
     /**
-     * @param mixed $hasImg
+     * @return mixed
      */
-    public function setHasImg($hasImg)
+    public function getPid()
     {
-        $this->hasImg = $hasImg;
+        return $this->pid;
+    }
+
+    /**
+     * @param mixed $pid
+     */
+    public function setPid($pid)
+    {
+        $this->pid = $pid;
     }
 
 }

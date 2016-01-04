@@ -1,0 +1,45 @@
+<div id="header">
+    <div id="slider" class="banner">
+        <div class="wrap">
+            <div class="pan">
+                <volist name="banner" id="var" empty="暂时没有Banner图片">
+                    <a href="{$var.href}" style="display:none;"><img src="{$var.src}" width="1000" height="320" alt="{$var.title}"></a>
+                </volist>
+            </div>
+            <a class="arr_l rf png"></a>
+            <a class="arr_r rf png"></a>
+            <!--缩略图,这里取消显示，需要可以向li标签里面添加img，并且display属性改为block-->
+            <ul class="tab lifl">
+                <li class="current"></li>
+                <volist name="banner" id="var" offset="1" empty="">
+                    <li class=""></li>
+                </volist>
+            </ul>
+        </div>
+    </div>
+    <!--menu 栏开始-->
+    <div id="menu_bar">
+        <ul>
+            <li>
+                <a class="menu_content" href="__ROOT__/Home/article/12772">研会介绍</a>
+                <div class="down_icon"></div>
+            </li>
+            <li>
+                <a class="menu_content" href="__ROOT__/Home/category/rights/1">生活权益</a>
+                <div class="down_icon"></div>
+            </li>
+            <li>
+                <a class="menu_content" href="__ROOT__/Home/category/inform/1">通知公告</a>
+                <div class="down_icon"></div>
+            </li>
+            <li>
+                <a class="menu_content" href="__ROOT__/Home/article/12778">武小研</a>
+                <div class="down_icon"></div>
+            </li>
+            <li>
+                <form action="__ROOT__/Home/search/1" method="POST" onsubmit="return search_check()"><div id="search_bar"><input type="text" id="search_input" name="title" placeholder="文章标题..." /><input type="submit" id="search_btn" value=""/></div></form>
+            </li>
+        </ul>
+    </div>
+    <!--menu 栏结束-->
+</div>

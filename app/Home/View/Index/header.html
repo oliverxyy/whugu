@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>武汉大学研究生会</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="oliverxyy@gmail.com">
+    <link href="__PUBLIC__/static/css/style.css" rel="stylesheet">
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="__PUBLIC__/static/img/logo.png">
+    <script type="text/javascript" src="__PUBLIC__/static/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/js/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/static/js/scripts.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $("ul.tab").tabs(".banner .pan > a", {
+                effect: 'fade',
+                rotate: true,
+                tabs: "li"
+            }).slideshow({
+                next: ".arr_r",
+                prev: ".arr_l",
+                autoplay: true,
+                autopause: true,
+                interval: 3000
+            });
+        })
+    </script>
+    <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cspan style='display:none' id='cnzz_stat_icon_1256439335'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1256439335' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</head>

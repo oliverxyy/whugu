@@ -33,10 +33,10 @@
         <div id="main_title"><h2>添加文章</h2></div>
         <div id="main_body">
             <div id="addArticle">
-                <form action="{$article.action}" method="post">
+                <form action="{$article.action}" method="post" onsubmit="return checkArticle()">
                     <div class="addArticle_row"><input type="text" name="title" placeholder="这里输入标题" value="{$article.title}" autofocus></div>
                     <div class="addArticle_row"><input type="text" name="author" placeholder="这里输入作者" value="{$article.author}"></div>
-                    <div class="addArticle_row"><input type="text" name="publisher" placeholder="这里输入发布者" value="{$article.publisher}"><br></div>
+                    <div class="addArticle_row"><input type="text" name="publisher" placeholder="这里输入发布者" value="{$user.organization} {$user.name}{$article.publisher}" readonly="readonly"><br></div>
                     <script id="editor" type="text/plain" style="width:1075px;height:300px;"></script>
                     <div id="type-choose">
                         <input type="hidden" name="cid" />
@@ -46,7 +46,10 @@
                         <a cid="4">生活权益</a>
                         <a cid="5">院系风采</a>
                         <a cid="6">常用下载</a>
-                        <a cid="7">部门链接</a>
+                        <if condition="$page eq 1 ">
+                            <a cid="7">部门链接</a>
+                            <else />
+                        </if>
                     </div>
                     <script>
                         UE.getEditor('editor',{

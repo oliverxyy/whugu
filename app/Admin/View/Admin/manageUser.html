@@ -12,7 +12,6 @@
                     <th>社团/组织</th>
                     <th>权限</th>
                     <th>最后登录时间</th>
-                    <th>最后登录ip</th>
                     <th>操作</th>
                 </tr>
                 </thead>
@@ -23,7 +22,6 @@
                         <td>{$var.organization}</td>
                         <td>{$var.level}</td>
                         <td>{$var.login_time}</td>
-                        <td>....</td>
                         <td>
                             <a class="level_user" href="__MODULE__/User/changeLevel/{$var.id}">授权</a>
                             <a class="delete_user" val="__MODULE__/User/deleteUser/{$var.id}">删除</a>

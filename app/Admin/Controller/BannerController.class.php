@@ -16,18 +16,18 @@ class BannerController extends Controller{
      * 2+：有操作权限
      */
     public function index(){
-        $this->user_deny(1);
+        $this->user_deny(2);
         $Banner = M('Banner');
         $banner = $Banner->select();
         for($i=0;$i<count($banner);$i++){
-            $banner[$i]['src'] = C('SLIDER_PATH').$banner[$i]['id'].".".$banner[$i]['suffix'];
+            $banner[$i]['src'] = C('SLIDER_PATH').C("SLIDER_PIC_PREFIX").$banner[$i]['id'].".".$banner[$i]['suffix'];
             $banner[$i]['state'] == 0 ? $banner[$i]['state'] = "启用" : $banner[$i]['state'] = "禁用";
         }
         $this->assign('banner',$banner);
         $this->display('Admin/banner');
     }
     public function update($id){
-        $this->user_deny(1);
+        $this->user_deny(2);
         $Banner = M('Banner');
         $banner = $Banner->find($id);
         $banner['action'] = C('PROJECT_PATH')."Admin/Banner/upload/".$id;
@@ -35,7 +35,7 @@ class BannerController extends Controller{
         $this->display('Admin/addBanner');
     }
     public function upload($id){
-        $this->user_deny(1);
+        $this->user_deny(2);
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize = 1024*1024*100 ;// 设置附件上传大小100M
         $upload->exts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
@@ -43,7 +43,7 @@ class BannerController extends Controller{
         $upload->savePath = ''; // 设置附件上传（子）目录
         $upload->replace = true;
         $upload->autoSub = false;//关闭子目录设置（默认按期）
-        $upload->saveName = $id;
+        $upload->saveName = C('SLIDER_PIC_PREFIX').$id;//设置数字会解析错误（文件命名规则错误）
         // 上传文件
         $info = $upload->upload();
         if(!$info) {// 上传错误提示错误信息
@@ -70,7 +70,7 @@ class BannerController extends Controller{
         $Banner->save($banner);
         $this->ajaxReturn($MSG);
     }
-    public function user_deny($level){
+    private function user_deny($level){
         if(session('user.level')==null){
             $this->error('尚未登录，无法访问！','login');
         }

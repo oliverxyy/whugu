@@ -1,0 +1,226 @@
+<include file="Index/header" />
+<body>
+	<!--header begin-->
+	<include file="Index/banner"/>
+	<!--header end-->
+	<div id="content">
+        <!-- 第一行 -->
+		<div class="content_row index">
+            <!--活动预告板块开始-->
+            <div class="block1">
+                <div class="block_menu">
+                    <div class="block_menu_content">
+                        <img src="__PUBLIC__/static/img/category/activity.png" height="48" width="48" class="menu_icon">
+                        <div class="menu_name">活动预告</div>
+                        <a class="menu_more" href="__ROOT__/Home/category/activity/1">更多</a>
+                    </div>
+                </div>
+                <!--文章列表 begin-->
+                <div class="block_content">
+                    <ul>
+                        <volist name="activity" id="var" empty="暂时没有数据">
+                            <li>
+                                <a href="__ROOT__/Home/article/{$var.id}" title="{$var.title}">
+                                    <div class="list_text">{$var.title}</div>
+                                    <div class="list_date">{$var.pubdate|substr=0,10}</div>
+                                </a>
+                            </li>
+                        </volist>
+.
+                    </ul>
+                </div>
+                <!--文章列表 end-->
+            </div>
+            <!--活动预告板块开始-->
+            <!--研会动态板块开始-->
+            <div class="block1">
+                <div class="block_menu">
+                    <div class="block_menu_content">
+                        <img src="__PUBLIC__/static/img/category/news.png" height="48" width="48" class="menu_icon">
+                        <div class="menu_name">研会动态</div>
+                        <a class="menu_more" href="__ROOT__/Home/category/dongtai/1">更多</a>
+                    </div>
+                </div>
+                <!--文章列表 begin-->
+                <div class="block_content">
+                    <ul>
+                        <volist name="dongtai" id="var" empty="暂时没有数据">
+                            <li>
+                                <a href="__ROOT__/Home/article/{$var.id}" title="{$var.title}">
+                                    <div class="list_text">{$var.title}</div>
+                                    <div class="list_date">{$var.pubdate|substr=0,10}</div>
+                                </a>
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+                <!--文章列表 end-->
+            </div>
+            <!--研会动态板块结束-->
+            <!--通知公告板块开始-->
+            <div class="block2">
+                <div class="block_menu">
+                    <div class="block_menu_content">
+                        <div class="menu_icon"><img src="__PUBLIC__/static/img/category/notification.png" height="auto" width="48"></div>
+                        <div class="menu_name">通知公告</div>
+                        <a class="menu_more" href="__ROOT__/Home/category/inform/1">更多</a>
+                    </div>
+                </div>
+                <!--文章列表 begin-->
+                <div class="block_content">
+                    <ul>
+                        <volist name="inform" id="var" empty="暂时没有数据">
+                            <li>
+                                <a href="__ROOT__/Home/article/{$var.id}" title="{$var.title}">
+                                    <div class="list_text">{$var.title}</div>
+                                    <div class="list_date">{$var.pubdate|substr=0,10}</div>
+                                </a>
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+                <!--文章列表 end-->
+            </div>
+            <!--通知公告板块结束-->
+		</div>
+
+        <!-- 第二行 -->
+        <div class="content_row index">
+            <!--生活权益板块开始-->
+            <div class="block1">
+                <div class="block_menu">
+                    <div class="block_menu_content">
+                        <img src="__PUBLIC__/static/img/category/life.png" height="48" width="48" class="menu_icon">
+                        <div class="menu_name">生活权益</div>
+                        <a class="menu_more" href="__ROOT__/Home/category/rights/1">更多</a>
+                    </div>
+                </div>
+                <!--文章列表 begin-->
+                <div class="block_content">
+                    <ul>
+                        <volist name="rights" id="var" empty="暂时没有数据">
+                            <li>
+                                <a href="__ROOT__/Home/article/{$var.id}" title="{$var.title}">
+                                    <div class="list_text">{$var.title}</div>
+                                    <div class="list_date">{$var.pubdate|substr=0,10}</div>
+                                </a>
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+                <!--文章列表 end-->
+            </div>
+            <!--生活权益板块开始-->
+            <!--院系风采板块开始-->
+            <div class="block1">
+                <div class="block_menu">
+                    <div class="block_menu_content">
+                        <img src="__PUBLIC__/static/img/category/college.png" height="48" width="48" class="menu_icon">
+                        <div class="menu_name">院系风采</div>
+                        <a class="menu_more" href="__ROOT__/Home/category/college/1">更多</a>
+                    </div>
+                </div>
+                <!--文章列表 begin-->
+                <div class="block_content">
+                    <ul>
+                        <volist name="college" id="var" empty="暂时没有数据">
+                            <li>
+                                <a href="__ROOT__/Home/article/{$var.id}" title="{$var.title}">
+                                    <div class="list_text">{$var.title}</div>
+                                    <div class="list_date">{$var.pubdate|substr=0,10}</div>
+                                </a>
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+                <!--文章列表 end-->
+            </div>
+            <!--院系风采板块结束-->
+            <!--常用下载板块开始-->
+            <div class="block2">
+                <div class="block_menu">
+                    <div class="block_menu_content">
+                        <div class="menu_icon"><img src="__PUBLIC__/static/img/category/download.png" height="auto" width="48" /></div>
+                        <div class="menu_name">常用下载</div>
+                        <a class="menu_more" href="__ROOT__/Home/category/download/1">更多</a>
+                    </div>
+                </div>
+                <!--文章列表 begin-->
+                <div class="block_content">
+                    <ul>
+                        <volist name="download" id="var" empty="暂时没有数据">
+                            <li>
+                                <a href="__ROOT__/Home/article/{$var.id}" title="{$var.title}">
+                                    <div class="list_text">{$var.title}</div>
+                                    <div class="list_date">{$var.pubdate|substr=0,10}</div>
+                                </a>
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+                <!--文章列表 end-->
+            </div>
+            <!--常用下载板块结束-->
+        </div>
+        <!-- 第三行 -->
+        <div class="content_row index">
+            <!--相关链接板块开始-->
+            <div class="block3">
+                <div class="related_link">
+                    <div class="related_link_title">相关链接</div>
+                    <div class="related_link_content">
+                        <a href="http://www.ccyl.org.cn/" target="_blank">中国共青团</a>
+                        <a href="http://www.hbgqt.org.cn/" target="_blank">湖北共青团</a>
+                        <a href="http://www.univs.cn/" target="_blank">教育部大学生在线</a>
+                        <a href="http://www.whu.edu.cn/" target="_blank">武汉大学</a>
+                        <a href="http://news.future.org.cn/" target="_blank">武汉大学未来网</a>
+                        <a href="http://xxzx.whu.edu.cn/" target="_blank">武汉大学信息中心</a>
+                        <a href="http://www.aoff.whu.edu.cn/" target="_blank">武汉大学本科招生网</a>
+                        <a href="http://info.whu.edu.cn/index.htm" target="_blank">武汉大学信息公开网</a>
+                        <a href="http://my.whu.edu.cn/" target="_blank">武汉大学信息门户</a>
+                    </div>
+                </div>
+                <div id="division1"></div>
+                <div class="related_link">
+                    <div class="related_link_title">信息服务</div>
+                    <div class="related_link_content">
+                        <a href="http://www.lib.whu.edu.cn/web/default.asp" target="_blank">武汉大学图书馆</a>
+                        <a href="http://www.whu.edu.cn/yhtd/jg.htm" target="_blank">教工服务</a>
+                        <a href="http://www.whu.edu.cn/yhtd/xs.htm" target="_blank">学生服务</a>
+                        <a href="http://www.whu.edu.cn/yhtd/xy.htm" target="_blank">校友服务</a>
+                        <a href="__ROOT__/Admin/User/login" target="_blank">研会管理系统</a>
+                    </div>
+                </div>
+            </div>
+            <!--相关链接板块开始-->
+            <!--部门链接板块开始-->
+            <div class="block4">
+                <div class="block_menu">
+                    <div class="block_menu_content">
+                        <img src="__PUBLIC__/static/img/category/department_link.png" height="48" width="48" class="menu_icon">
+                        <div class="menu_name">部门链接</div>
+                        <a class="menu_more" href="__ROOT__/Home/category/department/1">更多</a>
+                    </div>
+                </div>
+                <!--图标列表 begin-->
+                <div class="block_content">
+                    <ul>
+                        <volist name="department" id="var" empty="暂时没有数据">
+                            <li>
+                                <a href="__ROOT__/Home/article/{$var.aid}" target="_blank">
+                                    <img src="__PUBLIC__/static/img/department_link/{$var.id}.png" height="75" width="75" />
+                                    <div class="department_link_item_info">{$var.name}</div>
+                                </a>
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+                <!--图标列表 end-->
+            </div>
+            <!--部门链接板块结束-->
+        </div>
+	</div>
+	<include file="Index/footer"/>
+</body>
+</html>
+  
